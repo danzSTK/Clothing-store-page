@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    width: 100vw;
+    background-color: #000;
+    overflow-x: hidden;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+.items-header h1{
+    font-size: 2vw;
+    font-family: 'bungee', sans-serif;
+    color: #FFD100;
+}
+
+.links-header li > a{
+    position: relative;
+    letter-spacing: 2px;
+    margin: 0 10px;
+    color: #b4b4b4;
+    font-weight: 500;
+    
+}
+.nav-item .nav-link.active{
+    background-color: #FFD100;
+    color: #000;
+}
+.nav-item .nav-link.active::after{
+    content: "";
+    position: absolute;
+    background-color: transparent;
+}
+.links-header li > a::after{
+    content: "";
+    position: absolute;
+    background-color: #FFD100;
+    height: 3px;    
+    width: 0;
+    left: 0;
+    bottom: -2px;
+    border-radius: 20px;
+}
+
+.links-header li > a:hover{
+    color: #fff;
+    text-shadow: 0 0 12px #fff;
+}
+.links-header li > a:hover::after{
+    content: "";
+    position: absolute;
+    background-color: #FFD100;
+    height: 3px;    
+    width: 100%;
+    left: 0;
+    bottom: -2px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.btn-sing-up:hover{
+    border: 1px solid #FFD100;
+    background-color: transparent;
+    color:#FFD100 ;
+    text-shadow: 0 0 10px #FFD100;
+}
+.navbar-toggler{
+    background-color: #FFD100;
+    border: none;
+
+}
+
+.navbar-toggler:focus{
+    box-shadow: none;
+    
+}
+
+.text-color{
+    color: #FFD100;
+    font-family: 'bungee';
+}
+
+.title-section-home h2{
+    color: #ccc;
+    font-family: 'poppins';
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: bold;
+
+}
+p{
+    font-family: 'poppins', sans-serif;
+    font-weight: 300;
+}
+.descrição-section-home{
+    display: grid;
+    place-items: center;
+}
+
+section{
+    height: 100vh;
+}
+.h{
+    height: 90vh;
+}
+.h-2{
+    height: 1vh;
+}
+.images{
+    width: 45vw;
+}
+.buttons-home button{
+    font-family: 'poppins', sans-serif;
+    font-weight: 500;
+}
+
+.buttons-home #button-home-knowMore:hover{
+    background-color:#feda3a;
+}
+.card-group{
+    font-family: 'poppins', sans-serif;
+}
+
+.card-body h3{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.card-body h5{
+    font-weight: 500;
+    font-size: 16px;
+}
+
+
+.card-body button{
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'poppins', sans-serif;
+    
+}
+.button-products-card-buyNow:hover{
+    background-color: #ffd82a;
+    scale: 1.1;
+    box-shadow: 0 0 20px -5px #FFD100;
+}
+.button-products-card-view-all{
+    font-size: 20px;
+    font-family: 'poppins', sans-serif;
+    font-weight: 600;
+}
+.button-products-card-view-all:hover{
+    background-color: transparent;
+    color: #fff;
+    scale: 1.05;
+    box-shadow: 0 0 10px -2px #FFD100;
+    text-shadow: 0 0 12px;
+}
+.card-img-top{
+    width: 60%;
+    
+}
+
+.buttons-section-products{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.buttons-section-products span{
+    width: 100%;
+    font-size: 1.5vw;
+}
+
+.container-contact-icons {
+    width: 80%;
+}
+.redes-sociais-link a:hover{
+    background-color: transparent;
+    color: #ccc;
+    border: none;
+    box-shadow: 0 0 17px  -4px #252525;
+    transition: 0.5s;
+}
+.container-contact-icons span {
+    width: 100%;
+    font-family: 'poppins', sans-serif;
+    font-weight: 500;
+}
+
+.form-contact label{
+    color: #FFD100;
+    font-weight: 500;
+    font-family: 'poppins', sans-serif;
+}
+.button-contact-envie button{
+    font-weight: 500;
+    font-family: 'poppins', sans-serif;
+    padding: 5px 15px;
+    border-radius: 12px;
+}
+
+@media (max-width: 767px ) {
+    body{
+        width: 100vw;
+        background-color: #000;
+        overflow-x: hidden;
+    }
+    header{
+        overflow: hidden;
+    }
+    .images{
+        width: 65vw;
+    }
+    .buttons-home button{
+        font-family: 'poppins', sans-serif;
+        font-weight: 500;
+        font-size: 3vw;
+        margin-bottom: 20px;
+    }
+
+    .description-about p {
+        overflow: hidden;
+        font-family: 'poppins', sans-serif;
+    }
+    section{
+        height:auto;
+        box-sizing: border-box;
+        
+    }
+    .card-group{
+        font-family: 'poppins', sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-body h3{
+        font-weight: 600;
+        font-size: 18px;
+    }
+    .card{
+        width: 70vw;
+        margin-top: 10px;
+        background-color: #ccc;
+    }
+    .card-body h6{
+        margin: 0;
+        font-weight: 500;
+        font-size: 15px;
+        flex-wrap: wrap;
+    }
+    .container-contact-icons {
+        width: 100%;
+        
+    }
+
+    .container-contact-icons div a{
+        display: flex;
+        justify-content: center;
+    }
+
+    .buttons-section-products span{
+        font-size: 3.5vw;
+    }
+}
+
+@media (min-width: 767px ) and (max-width: 1024px){
+    .h{
+        height: auto;
+    }
+    section{
+        height:auto;
+        box-sizing: border-box;
+        
+    }
+    .section-main .images{
+        width: 60vw;
+    }
+    .buttons-home button{
+        font-family: 'poppins', sans-serif;
+        font-weight: 500;
+        font-size: 2vw;
+    }
+    .container-contact-icons {
+        width: 100%;
+    }
+    .container-contact-icons div a{
+        display: flex;
+        justify-content: center;
+    }
+
+    .buttons-section-products span{
+        font-size: 2vw;
+    }
+}
+
+@media (min-width: 1000px ) and (max-width: 1024px){
+    .section-main .images{
+        width: 45vw;
+    }
+}
